@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Li's Beautique official Site.{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'bTherapy/css/master.css' %}">
+    <link rel="stylesheet" href="{% static 'bTherapy/css/register.css' %}">
+    <link rel="stylesheet" href="{% static 'bTherapy/css/home-style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <header>
+          <h1 class="logo">Li's Beautique</h1>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle">
+          <nav>
+            <ul>
+              {% if user.is_authenticated %}
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="{% url 'logout' %}">logout</a></li>
+              {% else %}
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'signup' %}">Sign Up</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+            {% endif %}
+          </nav>
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+          </label>
+        </header>
+        <div class="mycontainer">
+            <div class="mySlides" id="slider1">
+            </div>
+
+            <div class="mySlides" id="slider2">
+            </div>
+
+            <div class="mySlides" id="slider3">
+            </div>
+
+            <div class="mySlides" id="slider4">
+            </div>
+
+            <div class="mySlides" id="slider5" >
+            </div>
+
+            <!-- Control Buttons -->
+            <a class="prev" onclick="showSlides(slideIndex -= 1);">&#10094;</a>
+            <a class="next" onclick="showSlides(slideIndex += 1);">&#10095;</a>
+            <!-- Control Buttons -->
+
+            <!-- Indicators -->
+            <div class="bullets">
+                <span class="bullet" onclick="showSlides(slideIndex = 1);"></span>
+                <span class="bullet" onclick="showSlides(slideIndex = 2);"></span>
+                <span class="bullet" onclick="showSlides(slideIndex = 3);"></span>
+                <span class="bullet" onclick="showSlides(slideIndex = 4);"></span>
+                <span class="bullet" onclick="showSlides(slideIndex = 5);"></span>
+            </div>
+
+    <!-- Indicators -->
+    </div>
+    <div class="shadow"></div>
+  <body>
+  <!-- div home page blog product -->
+  <div class="home_page">
+    {% block homeContent %}
+    {% endblock %}
+  </div>
+  <!-- div login page container -->
+  <div class="login_page">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <div class="client_testimonial">
+    {% block client_test %}
+    {% endblock %}
+  </div>
+  </body>
+<!-- footer mark up -->
+<footer class="footer-distributed">
+			<div class="footer-left">
+				<h3>Li's <span>Beautique</span></h3>
+				<p class="footer-links">
+					<a href="#">Home</a>
+					<a href="#">Blog</a>
+					<a href="#">Pricing</a>
+					<a href="#">About</a>
+					<a href="#">Faq</a>
+					<a href="#">Contact</a>
+				</p>
+				<p class="footer-company-name">Created By Andral Orelus &copy; 2018</p>
+			</div>
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>West Bridgford, NG26TZ</span> Nottingham, U.K</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+0 749 0483815</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:liana_93@hotmail.co.uk"><span class="__cf_email__" data-cfemail="22515752524d505662414d4f52434c5b0c414d4f">Click&#160;to send email</span></a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+				</div>
+			</div>
+		</footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="{% static 'bTherapy/js/main.js' %}"></script>
+</html>

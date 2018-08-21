@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block homeContent %}
+<section>
+  <div class="container">
+    <div id="header" class="col-lg-12 my_home_page">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <h5 class="list_product">Make-up and pedicures</h5>
+          <br>
+          <h2 class="products_title">Brand new merchandise coming soon</h2>
+          <br>
+          <div class="paragraph">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <button class="btn btn-primary" type="submit">learn more</button>
+          </div>
+          <br>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="myImage">
+            <img src="{% static 'home/img/make_up.jpg' %}" width="110%" alt="My image"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container our_services">
+    <h1 class="text-center">Services</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{% static 'home/img/eye_lash.png' %}" width="100%" alt="icons">
+        <div>
+          <h3>first service title</h3>
+          <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'home/img/make2.jpg' %}" width="100%" alt="icons">
+        <div>
+          <h3>second service title</h3>
+          <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'home/img/pedi.jpg' %}" width="100%" alt="icons">
+        <div>
+          <h3>third service title</h3>
+          <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

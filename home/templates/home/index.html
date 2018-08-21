@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block homeContent %}
+<div class="container">
+  <div class="info">
+    <h1>Latest Article News</h1><span>Made with <i class='fa fa-heart animated infinite pulse'></i> by <a href='#'>Andral Orelus</a></span><hr>
+  </div>
+  <!-- Normal Demo-->
+  <div class="column">
+    <!-- Post-->
+    <div class="post-module">
+      <!-- Thumbnail-->
+      <div class="thumbnail">
+        <div class="date">
+          <div class="day">27</div>
+          <div class="month">Mar</div>
+        </div><img src="{% static 'bTherapy/img/bt.jpg' %}"/>
+      </div>
+      <!-- Post Content-->
+      <div class="post-content">
+        <div class="category">Photos</div>
+        <h1 class="title">Full-back massage for very low cost</h1>
+        <h2 class="sub_title"> Phenamenal Services with care.</h2>
+        <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+        <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
+      </div>
+    </div>
+  </div>
+  <!-- Hover Demo-->
+  <div class="column">
+    <!-- Post-->
+    <div class="post-module">
+      <!-- Thumbnail-->
+      <div class="thumbnail">
+        <div class="date">
+          <div class="day">27</div>
+          <div class="month">Mar</div>
+        </div><img src="{% static 'bTherapy/img/hp2.jpg' %}"/>
+      </div>
+      <!-- Post Content-->
+      <div class="post-content">
+        <div class="category">Photos</div>
+        <h1 class="title">Brand new nails polish (50 different Colors)</h1>
+        <h2 class="sub_title">What is your favorite color?</h2>
+        <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+        <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="services-card-title">
+<h2> Services we do. </h2>
+<p class="list-inform">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+  sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</div>
+<section id="article-background" class="cards">
+  {# first cards Services #}
+<article class="card card--1">
+  <div class="card__info-hover">
+    <svg class="card__like"  viewBox="0 0 24 24">
+    <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+</svg>
+      <div class="card__clock-info">
+        <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+        </svg><span class="card__time">15 min</span>
+      </div>
+
+  </div>
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category"> Massages</span>
+    <h3 class="card__title">Get a full-body massage today and feel better tomorrow.</h3>
+    <span class="card__by">by <a href="#" class="card__author" title="author">Liana Sarno</a></span>
+  </div>
+</article>
+
+{# second card services #}
+<article class="card card--2">
+  <div class="card__info-hover">
+    <svg class="card__like"  viewBox="0 0 24 24">
+    <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+</svg>
+      <div class="card__clock-info">
+        <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+        </svg><span class="card__time">5 min</span>
+      </div>
+
+  </div>
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category"> Nails & Pedicures</span>
+    <h3 class="card__title">Your nails are our responsibility. We have more than 50 different
+    nail polish for your nails to shine.</h3>
+    <span class="card__by">by <a href="#" class="card__author" title="author">Liana Sarno</a></span>
+  </div>
+</article>
+
+{# third card services #}
+<article class="card card--3">
+  <div class="card__info-hover">
+    <svg class="card__like"  viewBox="0 0 24 24">
+    <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+</svg>
+      <div class="card__clock-info">
+        <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+        </svg><span class="card__time">5 min</span>
+      </div>
+
+  </div>
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category">Eyes Lashes</span>
+    <h3 class="card__title">Get the best eyes lashes treatment for low cost. don't wait the next day.</h3>
+    <span class="card__by">by <a href="#" class="card__author" title="author">Liana Sarno</a></span>
+  </div>
+</article>
+
+{# fourth card services #}
+<article class="card card--4">
+  <div class="card__info-hover">
+    <svg class="card__like"  viewBox="0 0 24 24">
+    <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+</svg>
+      <div class="card__clock-info">
+        <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+        </svg><span class="card__time">5 min</span>
+      </div>
+
+  </div>
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__category">Body Tinting</span>
+    <h3 class="card__title">Get a full-body tint, and be satisfy with your new skin color.
+    some more Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+    <span class="card__by">by <a href="#" class="card__author" title="author">Liana Sarno</a></span>
+  </div>
+</article>
+  </section>
+<br>
+{% endblock %}
+
+{% block client_test %}
+<h1 class="test3"> What Clients are saying about my work.</h1>
+<div class="container-test">
+  <input type="radio" name="nav" id="first" checked/>
+  <input type="radio" name="nav" id="second" />
+  <input type="radio" name="nav" id="third" />
+
+  <label for="first" class="first"></label>
+<label for="second"  class="second"></label>
+<label for="third" class="third"></label>
+
+  <div class="one slide">
+    <blockquote>
+      <span class="leftq quotes">&ldquo;</span> Hey thank you very much for the services. I was pleased with his creative design and will definitely be hiring him again. <span class="rightq quotes">&bdquo; </span>
+    </blockquote>
+    <img src="{% static 'bTherapy/img/hp2.jpg' %}" width="170" height="130" />
+    <h2>John Doe</h2>
+    <h6>Thanks and see you again</h6>
+  </div>
+
+  <div class="two slide">
+    <blockquote>
+      <span class="leftq quotes">&ldquo;</span> He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I recommend him to anyone who wants their work done professionally. The project ... <a href="#"> read more</a><span class="rightq quotes">&bdquo; </span>
+    </blockquote>
+    <img src="{% static 'bTherapy/img/hp2.jpg' %}" width="170" height="130" />
+    <h2>Jane Marry</h2>
+    <h6>Developer Relations at Woof Studios</h6>
+  </div>
+
+  <div class="three slide">
+    <blockquote>
+      <span class="quotes leftq"> &ldquo;</span> He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again. <span class="rightq quotes">&bdquo; </span>
+    </blockquote>
+    <img src="http://media.digitalcameraworld.com/files/2012/10/People_photography_composition_tips_PHG18.chap4_.n_p38_39.jpg" width="170" height="130" />
+    <h2>William Satch</h2>
+    <h6>CEO Woof Web Design Studios</h6>
+  </div>
+
+
+</div>
+{% endblock %}
